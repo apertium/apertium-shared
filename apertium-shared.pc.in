@@ -1,0 +1,7 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+srcdir=@datarootdir@/apertium/apertium-shared
+
+Name: apertium-shared
+Description: Shared data files for Apertium packages
+Version: @VERSION@

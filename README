@@ -1,0 +1,15 @@
+Apertium-shared
+================================================================================
+
+Requirements
+--------------------------------------------------------------------------------
+
+* lttoolbox >= 3.6.3
+* apertium >= 3.6.0
+
+Description
+--------------------------------------------------------------------------------
+
+This package provides shared files for phenomena that are frequently shared
+across languages, such as email addresses and numbers, which can be included
+in language specific dictionaries using `hfst-union` or `lt-append`.

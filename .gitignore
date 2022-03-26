@@ -1,0 +1,13 @@
+/INSTALL
+/Makefile
+/Makefile.in
+/aclocal.m4
+/apertium-shared.pc
+/autom4te.cache/*
+/config.status
+/configure
+/install-sh
+/missing
+/src/*.bin
+/src/Makefile
+/src/Makefile.in

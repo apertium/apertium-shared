@@ -4,6 +4,7 @@
 /aclocal.m4
 /apertium-shared.pc
 /autom4te.cache/*
+/config.log
 /config.status
 /configure
 /install-sh

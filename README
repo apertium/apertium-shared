@@ -13,3 +13,19 @@ Description
 This package provides shared files for phenomena that are frequently shared
 across languages, such as email addresses and numbers, which can be included
 in language specific dictionaries using `hfst-union` or `lt-append`.
+
+Usage
+--------------------------------------------------------------------------------
+
+In `configure.ac`:
+```
+PKG_CHECK_MODULES(APERTIUM_SHARED, apertium-shared >= 0.0.1)
+PKG_CHECK_VAR([SHARESRC], [apertium-shared], [srcdir])
+```
+
+In `Makefile.am`:
+```
+$(LANG1).automorf.bin: .deps/$(LANG1).automorf.bin $(SHARESRC)/shared-mono-lr.bin
+	lt-append -k $^ $@
+```
+And rename existing `$(LANG1).automorf.bin` to `.deps/$(LANG1).automorf.bin`
